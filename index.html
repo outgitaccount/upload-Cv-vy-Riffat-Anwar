@@ -1,0 +1,53 @@
+<div class="container"></div>
+    <div class="form-section">
+        <h1>Dynamic Resume Builder</h1>
+        <form id="resume-form">
+            <!-- Form Fields -->
+            <h2>Personal Information</h2>
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="text" id="title" placeholder="Job Title" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+
+            <h2>Education</h2>
+            <input type="text" id="degree" placeholder="Degree" required>
+            <input type="text" id="school" placeholder="School" required>
+            <input type="text" id="year" placeholder="Year of Graduation" required>
+
+            <h2>Work Experience</h2>
+            <input type="text" id="company" placeholder="Company Name" required>
+            <input type="text" id="position" placeholder="Position" required>
+            <input type="text" id="work-duration" placeholder="Duration" required>
+
+            <h2>Skills</h2>
+            <input type="text" id="skills" placeholder="Skills (comma-separated)" required>
+
+            <button type="button" id="generate-resume">Generate Resume</button>
+        </form>
+    </div>
+
+    <div class="resume-preview" id="resume-preview">
+        <h1 id="preview-name">Your Name</h1>
+        <h2 id="preview-title">Job Title</h2>
+        <p>Email: <span id="preview-email">example@example.com</span></p>
+        <p>Phone: <span id="preview-phone">000-000-0000</span></p>
+
+        <h3>Education</h3>
+        <p>Degree: <span id="preview-degree">Your Degree</span></p>
+        <p>School: <span id="preview-school">Your School</span></p>
+        <p>Graduation Year: <span id="preview-year">2020</span></p>
+
+        <h3>Work Experience</h3>
+        <p>Company: <span id="preview-company">Your Company</span></p>
+        <p>Position: <span id="preview-position">Your Position</span></p>
+        <p>Duration: <span id="preview-work-duration">Work Duration</span></p>
+
+        <h3>Skills</h3>
+        <p><span id="preview-skills">Skill 1, Skill 2, Skill 3</span></p>
+    </div>
+
+    <!-- Add the Download Resume Button -->
+    <button id="download-resume" style="display:none;">Download Resume</button>
+</div>
+
+<script src="main.js"></script>
